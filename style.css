@@ -1,0 +1,93 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  h1 {
+    font-size: 48px;
+    color: #ff4081;
+    margin-bottom: 30px;
+  }
+  
+  .intro {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  
+  .propose-btn {
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .propose-btn:hover {
+    background-color: #f50057;
+  }
+  
+  .form-container {
+    display: none;
+    margin-top: 50px;
+  }
+  
+  label {
+    display: block;
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 10px
+  }
+  
+  .chat-container {
+    display: none;
+    margin-top: 30px;
+  }
+  
+  .chat-bubble {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    max-width: 70%;
+    margin-bottom: 10px;
+    position: relative;
+    animation-name: slidein;
+    animation-duration: 0.5s;
+  }
+  
+  .chat-bubble:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-top: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+  
+  .user-message {
+    background-color: #e6e6e6;
+    align-self: flex-end;
+  }
+  
+  .bot-message {
+    background-color: #ff4081;
+    color: #fff;
+  }
+  
+  @keyframes slidein {
+    from {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

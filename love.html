@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Propose App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="first-name">Welcome</h1>
+      <p class="intro">There is something I have been waiting to tell you. Click on start and let go.</p>
+      <button class="propose-btn" onclick="chat()">Start</button>
+      <div class="form-container">
+        <form id="proposal-form">
+          <label for="recipient-name">Recipient's Name:</label>
+          <input type="text" id="recipient-name" name="recipient-name" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </div>
+      <div class="result-container">
+        <p class="result"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
